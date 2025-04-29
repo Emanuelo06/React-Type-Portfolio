@@ -1,6 +1,5 @@
-import { FC } from 'react';
 
-interface Project {
+interface ProjectProps {
   imgUrl:string,
   title:string,
   description:string,
@@ -8,7 +7,7 @@ interface Project {
   skills: string[]
 }
 
-const Project: React.FC<Project> = ({ imgUrl, title, description, projectUrl, skills }) => {
+const Project= ({ imgUrl, title, description, projectUrl, skills }:ProjectProps) => {
   return (
     <div className="w-full bg-[#3d3d3d] rounded-[8px] p-4 mb-4 flex flex-col sm:flex-row">
       {/* Image */}
