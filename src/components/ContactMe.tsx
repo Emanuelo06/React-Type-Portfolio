@@ -3,7 +3,7 @@
 const ContactMe = () => {
   return (
     <div className='bg-[#1f1f1f] text-white p-6 rounded-[12px] ml-0 max-w-[700px] pl-0 w-full mx-auto mt-6 shadow-lg'>
-      <h2 className='text-3xl md:text-5xl font-bold mb-6 text-left'>Contact Me</h2>
+      <h2 className='text-3xl md:text-5xl text-lime-400 font-bold mb-6 text-left'>Contact Me</h2>
       <form
         action="https://formspree.io/f/xldbdraa" 
         method="POST"

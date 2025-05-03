@@ -14,12 +14,12 @@ const Project= ({ imgUrl, title, description, projectUrl, skills }:ProjectProps)
       <img
         src={imgUrl}
         alt="project image"
-        className="sm:w-[150px] md:w-[200px]  rounded-[8px] cursor-pointer mb-4 sm:mb-0 sm:mr-4 self-center"
+        className="sm:w-[150px] md:w-[200px]  rounded-[8px] mb-4 sm:mb-0 sm:mr-4 self-center"
       />
 
       {/* Text content */}
       <div className="flex flex-col justify-start">
-        <h1 className="text-lg md:text-2xl text-white underline mb-2">
+        <h1 className="text-lg md:text-2xl text-lime-400 underline mb-2">
           <a href={projectUrl} target="_blank" rel="noopener noreferrer">
             {title}
           </a>
