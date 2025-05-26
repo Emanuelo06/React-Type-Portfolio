@@ -14,7 +14,7 @@ const Project= ({ imgUrl, title, description, projectUrl, skills }:ProjectProps)
       <img
         src={imgUrl}
         alt="project image"
-        className="sm:w-[150px] md:w-[200px]  rounded-[8px] mb-4 sm:mb-0 sm:mr-4 self-center"
+        className="sm:w-[150px] md:w-[200px] h-[150px] md:h-[200px] rounded-[8px] mb-4 sm:mb-0 sm:mr-4 self-center"
       />
 
       {/* Text content */}
