@@ -3,6 +3,7 @@ import Project from './Project'
 import MyPokemon from '../assets/pokemon.jpg'
 import MyTodo from '../assets/todo.jpg'
 import MyRestaurant from '../assets/MyRestaurant.jpg'
+import MyEcommerce from '../assets/ecommerce.jpg'
 
 const Projects = () => {
    const pokemonUrl:string = "https://emanuelo06.github.io/pokemon-finder/";
@@ -20,10 +21,10 @@ const Projects = () => {
   return (
    <div className='bg-[#1f1f1f]  w-full h-fit relative z-10 mt-4 rounded-[8px] p-5' id='projects'>
       <h1 className='text-sm md:text-[18px] font-[600] text-white mb-2'>//PROJECTS</h1>
-      <Project imgUrl={MyPokemon} title="Pokemon Finder" description={pokemonDescription} projectUrl={pokemonUrl} skills={pokemonSkills}/>
-      <Project imgUrl={MyTodo} title="Todo List" description={todoDescription} projectUrl={todoUrl} skills={todoSkills}/>
-      <Project imgUrl={MyRestaurant} title="Restaurant Landing-Page" description={restaurantDescription} projectUrl={restaurantUrl} skills={restaurantSkills}/>
-      <Project imgUrl={MyRestaurant} title="E-commerce Website" description={ecommerceDescription} projectUrl={ecommerceUrl} skills={ecommerceSkills}/>
+         <Project imgUrl={MyEcommerce} title="E-commerce Website" description={ecommerceDescription} projectUrl={ecommerceUrl} skills={ecommerceSkills}/>
+         <Project imgUrl={MyRestaurant} title="Restaurant Landing-Page" description={restaurantDescription} projectUrl={restaurantUrl} skills={restaurantSkills}/>
+         <Project imgUrl={MyPokemon} title="Pokemon Finder" description={pokemonDescription} projectUrl={pokemonUrl} skills={pokemonSkills}/>
+         <Project imgUrl={MyTodo} title="Todo List" description={todoDescription} projectUrl={todoUrl} skills={todoSkills}/>
    </div>
   )
 }
