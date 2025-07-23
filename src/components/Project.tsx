@@ -9,16 +9,18 @@ interface ProjectProps {
 
 const Project= ({ imgUrl, title, description, projectUrl, skills }:ProjectProps) => {
   return (
-    <div className="w-full bg-[#3d3d3d] rounded-[8px] p-4 mb-4 flex flex-col sm:flex-row">
+    <div className="w-full bg-[#3d3d3d] rounded-[8px] p-4 mb-4 flex flex-col sm:flex-row items-center">
       {/* Image */}
-      <img
-        src={imgUrl}
-        alt="project image"
-        className="sm:w-[150px] md:w-[200px] h-[150px] md:h-[200px] rounded-[8px] mb-4 sm:mb-0 sm:mr-4 self-center"
-      />
+      <div className="flex justify-center items-center sm:w-[180px] md:w-[260px] h-[180px] md:h-[220px] mb-4 sm:mb-0 sm:mr-4">
+        <img
+          src={imgUrl}
+          alt="project image"
+          className="w-full h-full object-cover object-center rounded-[8px]"
+        />
+      </div>
 
       {/* Text content */}
-      <div className="flex flex-col justify-start">
+      <div className="flex flex-col justify-start flex-1">
         <h1 className="text-lg md:text-2xl text-lime-400 underline mb-2">
           <a href={projectUrl} target="_blank" rel="noopener noreferrer">
             {title}
